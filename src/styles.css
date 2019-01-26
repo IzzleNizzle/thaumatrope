@@ -1,0 +1,11 @@
+body {
+  background-color: rebeccapurple;
+}
+
+.special {
+  height: 15em;
+}
+
+.responsive {
+  height: 100%;
+}
