@@ -42,6 +42,12 @@ class Thaumatrope extends Component {
   }
 
 
+  addTen = () => {
+    this.setState(prevState => ({
+      slider: parseFloat(prevState.slider) + 10
+    }))
+  }
+
   handleClick = () => {
     this.setState(prevState => ({
       isToggleOn: !prevState.isToggleOn
@@ -88,6 +94,10 @@ class Thaumatrope extends Component {
 
         <button onClick={this.handleClick}>
           {this.state.isToggleOn ? 'ON' : 'OFF'}
+        </button>
+
+        <button onClick={this.addTen}>
+          +
         </button>
 
       </div>
