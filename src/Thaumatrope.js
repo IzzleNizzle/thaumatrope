@@ -49,20 +49,23 @@ class Thaumatrope extends Component {
   }
 
   render() {
-    // let styles = {
-    //   transform: `rotateY(${this.state.slider}deg)`
-    // }
+    let styles = {
+      transform: `rotateY(${this.state.slider}deg)`,
+      borderRadius: `50%`,
+      boxShadow: `5px 10px #888888`,
+      background: `wheat`
+    }
 
     return (
       <div>
         <div className={`special ${this.state.isToggleOn ? "testing" : null}`}>
           {this.calcThaumaSide() ? (
             <ThaumatropeBack
-            // styles={styles} 
+              styles={styles}
             />
           ) : (
               <ThaumatropeFront
-              // styles={styles} 
+                styles={styles}
               />
             )}
         </div>
